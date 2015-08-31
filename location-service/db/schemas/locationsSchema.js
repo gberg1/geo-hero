@@ -7,7 +7,9 @@ var createLocationsTable = Promise.coroutine(function*() {
     yield db.schema.createTable('locations', function(table) {
       table.increments();
       table.string('name');
-      table.string('address');  
+      table.string('address');
+      table.string('city');
+      table.string('state', 2);  
       table.text('description');
       table.timestamps();
     });
