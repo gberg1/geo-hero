@@ -4,7 +4,7 @@ var Promise = require('bluebird');
 var should = require('should');
 
 describe('createUser()', function() {
-  var testUser = {name: "Joe Schmoe", username: "musclehamster", email:"musclehamster@gmail.com"}
+  var testUser = {name: "Joe Schmoe", username: "musclehamster", email:"musclehamster@gmail.com"};
 
   after(function(done) {
     db('users').delete().where({username: testUser.username}).then(function() {
