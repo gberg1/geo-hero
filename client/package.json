@@ -13,7 +13,9 @@
   "dependencies": {
     "browserify": "^9.0.3",
     "firebase": "^2.2.9",
+    "google-maps": "^3.1.0",
     "gulp": "^3.8.11",
+    "gulp-babel": "^5.2.1",
     "gulp-concat": "^2.5.2",
     "gulp-react": "^3.0.1",
     "gulp-sass": "^2.0.1",
