@@ -1,7 +1,7 @@
 var db = require('../db');
 var Promise = require('bluebird');
 
-var createWishlistLocationTable = Promise.coroutine(function*() {
+var createlistLocationsTable = Promise.coroutine(function*() {
   var exists = yield db.schema.hasTable('locations');
   if (!exists) {
     yield db.schema.createTable('list-location', function(table) {
@@ -13,4 +13,4 @@ var createWishlistLocationTable = Promise.coroutine(function*() {
   }
 });
 
-module.exports = createWishlistLocationTable;
+module.exports = createlistLocationsTable;

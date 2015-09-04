@@ -5,7 +5,7 @@ var should = require('should');
 
 describe('createList()', function() {
   // TODO: figure out how to reference owner of list
-  var testList = {name: 'San Francisco', description: 'My favorite city', owner:'1'};
+  var testList = {name: 'San Francisco', description: 'My favorite city', owner: 1};
 
   after(function(done) {
     db('lists').delete().where({name: testList.name}).then(function() {

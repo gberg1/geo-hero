@@ -21,4 +21,4 @@ module.exports = knex;
 var usersSchema = require('./schemas/usersSchema')();
 var locationsSchema = require('./schemas/locationsSchema')();
 var listsSchema = require('./schemas/listsSchema')();
-var wishlistLocationsSchema = require('./schemas/wishlistLocationsSchema')();
+var listLocationsSchema = require('./schemas/listLocationsSchema')();
